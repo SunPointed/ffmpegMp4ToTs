@@ -5934,10 +5934,8 @@ void av_register_bitstream_filter(AVBitStreamFilter *bsf);
  * @return a bitstream filter context if a matching filter was found
  * and successfully initialized, NULL otherwise
  */
-//attribute_deprecated
-//AVBitStreamFilterContext *
-
-AVBitStreamFilterContext * av_bitstream_filter_init(const char *name);
+attribute_deprecated
+AVBitStreamFilterContext *av_bitstream_filter_init(const char *name);
 
 /**
  * Filter bitstream.

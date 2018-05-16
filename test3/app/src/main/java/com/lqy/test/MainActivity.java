@@ -18,16 +18,12 @@ public class MainActivity extends AppCompatActivity {
 
         TextView tv = (TextView) findViewById(R.id.tv);
 
-        int codec_id = 28;
-        int result = helper.test_h246(28); //28 is the H264 Codec ID
-        tv.setText(result == 0 ? "Support Codec ID:" + codec_id : "Not support Codec ID:" + codec_id);
-
         new Thread(new Runnable() {
             @Override
             public void run() {
                 helper.convert(
                         Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "777.mp4",
-                        Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "777.m3u8"
+                        Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "777.ts"
                 );
             }
         }).start();

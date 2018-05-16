@@ -6,8 +6,10 @@
 #ifndef NDK_COM_NDK_LQY_NDK_NDKHELPER_H
 #define NDK_COM_NDK_LQY_NDK_NDKHELPER_H
 #include <jni.h>
-#include<android/log.h>
+#include <android/log.h>
 #include <string.h>
+#include <stdio.h>
+#include "log.h"
 //JNIEXPORT jint JNICALL Java_com_lqy_test_NDKHelper_test
 //        (JNIEnv *env, jobject thiz, jint codecID);
 //
